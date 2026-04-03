@@ -1,7 +1,7 @@
 const renderTool = async () => {
     const requestedID = parseInt(window.location.href.split('/').pop())
 
-    const response = await fetch('/Tools')
+    const response = await fetch('/tools')
     const data = await response.json()
 
     const toolContent = document.getElementById('tool-content')
@@ -23,7 +23,7 @@ const renderTool = async () => {
     else {
         const message = document.createElement('h2')
         message.textContent = 'No Tools Available 😞'
-        giftContent.appendChild(message)
+        toolContent.appendChild(message)
     }
 }
 

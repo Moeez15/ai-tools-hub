@@ -1,5 +1,4 @@
 import express from 'express'
-import 'dotenv'
 import toolsRouter from './routes/tools.js'
 
 const app = express()
